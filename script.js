@@ -1,5 +1,5 @@
 // countdown
-let secondsCountdown = 10;
+let secondsCountdown = 15;
 
 const seconds = document.getElementsByClassName("seconds");
 
