@@ -13,11 +13,11 @@ const showBaby = () => {
     document.querySelector("#actual").classList.add("showed");
     makeBurst();
     document.addEventListener("click", () => {
-        document.querySelector(".scene3").style.display = "flex";
-        document.body.classList.remove("reveal-gender-fake");
-        document.body.classList.add("reveal-gender");
-        makeBurst(["#FF00FF", "#FF69B4", "#DA70D6", "#FFC0CB"]);
         document.querySelector(".scene2").style.display = "none";
+        makeBurst(["#FF00FF", "#FF69B4", "#DA70D6", "#FFC0CB"]);
+        document.querySelector(".scene3").style.display = "flex";
+        document.body.classList.add("reveal-gender");
+        document.body.classList.remove("reveal-gender-fake");
     });
 };
 
@@ -42,10 +42,10 @@ function makeParticle(colors) {
     const p = document.createElement("div");
     p.classList.add("confetti");
     document.querySelector('.overlay').append(p)
-
-    // document.body.append(p);
-    p.x = window.innerWidth / 2;
-    p.y = window.innerHeight / 2;
+    // p.x = window.innerWidth / 2;
+    // p.y = window.innerHeight / 2;    
+    p.x = window.innerWidth;
+    p.y = window.innerHeight;
     p.vx = getRandomInt(-maxVelocity, maxVelocity);
     p.vy = getRandomInt(-maxVelocity * 1.5, maxVelocity);
     p.o = 1;
