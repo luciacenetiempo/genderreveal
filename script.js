@@ -42,8 +42,8 @@ function makeParticle(colors) {
     const p = document.createElement("div");
     p.classList.add("confetti");
     document.querySelector('.overlay').append(p)
-    p.x = window.innerWidth / 2;
-    p.y = window.innerHeight / 2;    
+    p.x = window.innerWidth / 100;
+    p.y = window.innerHeight / 100;    
 
     p.vx = getRandomInt(-maxVelocity, maxVelocity);
     p.vy = getRandomInt(-maxVelocity * 1.5, maxVelocity);
