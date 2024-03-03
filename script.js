@@ -29,9 +29,9 @@ const timer = setInterval(() => {
 }, 1000);
 
 /// confetti
-const burstAmount = 1000;
+const burstAmount = 2000;
 const grav = 0.05;
-const maxVelocity = 100;
+const maxVelocity = 200;
 
 const particles = [];
 const genericColors = ["#500404", "#a80a0a", "#0f611a", "#05cf20"];
