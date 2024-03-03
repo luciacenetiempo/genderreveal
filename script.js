@@ -1,5 +1,5 @@
 // countdown
-let secondsCountdown = 10;
+let secondsCountdown = 2;
 
 const seconds = document.getElementsByClassName("seconds");
 
@@ -31,7 +31,7 @@ const timer = setInterval(() => {
 /// confetti
 const burstAmount = 1000;
 const grav = 0.05;
-const maxVelocity = 10;
+const maxVelocity = 100;
 
 const particles = [];
 const genericColors = ["#500404", "#a80a0a", "#0f611a", "#05cf20"];
