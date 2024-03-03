@@ -147,6 +147,7 @@ div#actual {
 div#actual.showed {    
   animation: showIn 2s 1;
   animation-fill-mode: forwards;
+  animation-delay: 1s;
 }
 .overlay{
   position: fixed;
