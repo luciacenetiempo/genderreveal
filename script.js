@@ -31,7 +31,7 @@ const timer = setInterval(() => {
 /// confetti
 const burstAmount = 1000;
 const grav = 0.05;
-const maxVelocity = 21;
+const maxVelocity = 10;
 
 const particles = [];
 const genericColors = ["#500404", "#a80a0a", "#0f611a", "#05cf20"];
@@ -42,10 +42,9 @@ function makeParticle(colors) {
     const p = document.createElement("div");
     p.classList.add("confetti");
     document.querySelector('.overlay').append(p)
-    // p.x = window.innerWidth / 2;
-    // p.y = window.innerHeight / 2;    
-    p.x = window.innerWidth;
-    p.y = window.innerHeight;
+    p.x = window.innerWidth / 2;
+    p.y = window.innerHeight / 2;    
+
     p.vx = getRandomInt(-maxVelocity, maxVelocity);
     p.vy = getRandomInt(-maxVelocity * 1.5, maxVelocity);
     p.o = 1;
